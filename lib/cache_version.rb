@@ -4,6 +4,10 @@ module CacheVersion
   end
 
   module ClassMethods
+    # Adds methods
+    # - version
+    # - increment_version
+    # - model_key
     def cache_versions(*args, &block)
       #default options
       options = {}
